@@ -1,6 +1,5 @@
 // All code is in a call to jQuery to ensure that the code isn't run until the browser
 //  has finished rendering all the elements in the html.
-
 $(function () {
     var largeContainerEl = $('.container-lg');    
 
@@ -10,6 +9,14 @@ $(function () {
     //loop thru array of standard business hours 8am-5pm
     for (var i = 8; i < 18; i++) {
         var timeBlockDivEl;
+        var displayHour;
+        if (i < 12) { 
+            displayHour = (i + " AM");
+        } else if (i === 12) {
+            displayHour = (i + " PM");
+        } else {
+            displayHour = ((i-12) + " PM");
+        }
         var savedActivityKey = "hour-"+i;
         //get saved activities from local storage. If null, use empty string
         var savedActivity = localStorage.getItem(savedActivityKey) || "";
@@ -30,7 +37,7 @@ $(function () {
         //create, assign and append the rest of the elements
         largeContainerEl.append(timeBlockDivEl);
         var timeBlockLabelEl = $('<div class="col-2 col-md-1 hour text-center py-3"></div>');
-        timeBlockLabelEl.text(i);
+        timeBlockLabelEl.text(displayHour);
         var timeBlockTextEl = $(`<textarea class="col-8 col-md-10 description" rows="3">${savedActivity}</textarea>`);
         var timeBlockSaveBtnEl = $('<button class="btn saveBtn col-2 col-md-1" aria-label="save"></button>');
         var timeBlockIconEl = $('<i class="fas fa-save" aria-hidden="true"></i>');
