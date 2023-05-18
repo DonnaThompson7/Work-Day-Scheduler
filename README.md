@@ -2,12 +2,12 @@
 
 ## Overview:
 * Developer: Donna Thompson
-* Challenge type: Modify starter code to develop a simple calendar application that allows a user to save events for each hour of the day.
+* Challenge type: Modify starter code to develop a simple calendar application that allows a user to save events for each hour of the day for standard business hours: 8am - 5pm.
 
 <br/>
 
 ## Link to deployed application:
-[donnathompson7.github.io/Code-quiz](https://donnathompson7.github.io/Work-Day-Scheduler)
+[donnathompson7.github.io/Work-Day-Scheduler](https://donnathompson7.github.io/Work-Day-Scheduler)
 
 <br/>
  
