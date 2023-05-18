@@ -41,4 +41,4 @@ THEN the saved events persist
 <br/>
 
 ## Work-Day-Scheduler homepage:
-![Code Quiz](./assets/images/work_day_scheduler_screenshot.png)
+![Work Day Scheduler](./assets/images/work_day_scheduler_screenshot.png)
