@@ -31,7 +31,7 @@ $(function () {
         largeContainerEl.append(timeBlockDivEl);
         var timeBlockLabelEl = $('<div class="col-2 col-md-1 hour text-center py-3"></div>');
         timeBlockLabelEl.text(i);
-        var timeBlockTextEl = $(`<textarea class="col-8 col-md-10 description" rows="3"> ${savedActivity}</textarea>`);
+        var timeBlockTextEl = $(`<textarea class="col-8 col-md-10 description" rows="3">${savedActivity}</textarea>`);
         var timeBlockSaveBtnEl = $('<button class="btn saveBtn col-2 col-md-1" aria-label="save"></button>');
         var timeBlockIconEl = $('<i class="fas fa-save" aria-hidden="true"></i>');
         timeBlockDivEl.append(timeBlockLabelEl);
